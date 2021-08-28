@@ -2,40 +2,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel='icon' href='favicon.ico' type='image/x-icon'/ >
 	<link rel="stylesheet" href="estilo.css">
-  <title>Ricardo Nieto</title>
 <style>
+
 body {
-  margin: 0;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+  margin: 0
+
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 20%;
-  background-color: #1a1a1a;
-  position: fixed;
-  height: 100%;
-  font-size: 20px;
-  font-family: monospace;
-  overflow: auto;
-}
-
-li a {
-  display: block;
-  color: #ffffff;
-  padding: 15px 16px;
-  text-decoration: none;
-}
-
-li a.active {
-  background-color: #99ddff;
+.dark-mode {
+  background-color: black;
   color: white;
 }
-
-
 </style>
 </head>
 
@@ -44,9 +25,10 @@ li a.active {
 <body>
 
 <ul>
-  <li><a class="active" href="#home">Home</a></li>
-  <li><a href="https://www.instagram.com/pconocimientos"><img src="IG.png" >  Instagram </a></li>
+  <li><a class="active" href="https://ricardonietochavez.github.io/Webpage/">Home</a></li>
+  <li><a href="https://www.instagram.com/pconocimientos"><img src="https://img.icons8.com/color/48/000000/instagram-new--v1.png"/>  Instagram </a></li>
   <li><a href="#about">About</a></li>
+  <li><br><button onclick="myFunction()">Dark mode</button></li>
 </ul>
 
 <div style="margin-left:25%;padding:1px 16px;height:1000px;">
@@ -63,6 +45,12 @@ li a.active {
 <br>
 
 
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
 
 <br>
 
