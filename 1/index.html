@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <link rel="icon"href="favicon.ico" type="image/ico" />
+</head>
 <style>
+
 body, html {
   height: 100%;
   margin: 0;
+
 }
 
 .bgimg {
-  background-image: url('/w3images/forestbridge.jpg');
-  height: 100%;
+
+  height: 80%;
   background-position: center;
   background-size: cover;
   position: relative;
-  color: white;
+  color: black;
   font-family: "Courier New", Courier, monospace;
   font-size: 25px;
 }
@@ -21,6 +26,7 @@ body, html {
   position: absolute;
   top: 0;
   left: 16px;
+
 }
 
 .bottomleft {
@@ -39,28 +45,28 @@ body, html {
 
 hr {
   margin: auto;
-  width: 40%;
+  width:50%;
 }
 </style>
 <body>
 
 <div class="bgimg">
-  <div class="topleft">
-    <p>Logo</p>
+  <div class="topleft"><img src="img.jfif">
+    
   </div>
   <div class="middle">
     <h1>COMING SOON</h1>
     <hr>
-    <p id="demo" style="font-size:30px"></p>
+    <p id="demo" style="font-size:50px"></p>
   </div>
   <div class="bottomleft">
-    <p>Some text</p>
+    <p>GET READY FOR THIS</p>
   </div>
 </div>
 
 <script>
 // Set the date we're counting down to
-var countDownDate = new Date("Jan 5, 2022 15:37:25").getTime();
+var countDownDate = new Date("Sep 15, 2021 15:37:25").getTime();
 
 // Update the count down every 1 second
 var countdownfunction = setInterval(function() {
