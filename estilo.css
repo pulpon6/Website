@@ -1,7 +1,7 @@
-body {
+body, head{
 	background:#EFEAE9;
 	text-align: center;
-  height: 2000px;
+  height: 35px;
 	
 }
 
@@ -11,7 +11,7 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 22%;
+  width: 18%;
   background-color: #1a1a1a;
   position: fixed;
   height: 100%;
@@ -20,14 +20,14 @@ ul {
   overflow: auto;
   float:right;
   text-align: center;
-  solid #ccc;
+  
 
 }
 
 li a {
   display: block;
   color: #ffffff;
-  padding: 15px 16px;
+  padding: 15px 15px;
   text-decoration: none;
 }
 
