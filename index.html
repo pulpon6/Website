@@ -1,107 +1,110 @@
-<!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" href="estilo.css">
   <link rel="icon"href="favicon.ico" type="image/ico" />
-</head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- begin _includes/seo.html --><title>Ricardo Nieto Chavez | Informatica y Blog</title>
+  <meta name="description" content="Ricardo Nieto Chavez">
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=0.7">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="website | Informatica y Blog">
+  <meta property="og:title" content="            Ricardo Nieto Chavez         ">
+  <meta property="og:url" content="https://rnch6.tech">
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-KM53LK2');</script>
+  <!-- End Google Tag Manager -->
+
+
 <style>
 
-body, html,div {
-  height: 100px;
-  margin: 0;
-  text-align: center;
 
-}
-
-
-
-.bgimg {
-
-  
-  background-position: center;
-  background-size: cover;
-  position: relative;
+body {
+  background-color: white;
   color: black;
-  font-family: "Courier New", Courier, monospace;
   font-size: 25px;
-
- ; 
-}
-
-.topleft {
-  position: absolute;
-  top: 0;
-  text-align: center;
-  left: 0px;
+  margin: 0
 
 }
 
-.bottomleft {
-  position: absolute;
-  bottom: 0;
-  left: 16px;
-  text-shadow: 12px; 
-  text-align: center;
+.dark-mode {
+  background-color: #333333;
+  color: white;
+  border-radius: 40px;
 }
 
-.middle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
 
-hr {
-  margin: auto;
-  text-align: center;
-  width:50%;
-}
+
+
+
 </style>
+</head>
+
+
+
 <body>
 
-<div class="bgimg">
-  <div class="topleft"><img src="img.jfif">
-    
-  </div>
-  <div class="middle">
-    <h1>Get ready for this</h1>
-    <h1>COMING SOON</h1>
-    <hr>
-    <p id="demo" style="font-size:50px"></p>
-  </div>
+
+ <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KM53LK2"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+
+
+<ul>
+  <li><a class="active" href="https://rnch6.tech/">Home</a></li>
+ 
+  <li><a href="https://ricardonietochavez.github.io/1/">Click here :)</a></li>
+  <li><a href="https://www.instagram.com/pconocimientos/" class="fa fa-instagram"></a>
+</li>
+  <li><a href="https://twitter.com/ricardonietoch6" class="fa fa-twitter"></a></li>
+  <li><br><button onclick="myFunction()">-   Dark mode   -</button></li>
   
-</div>
+</ul>
+
+<div style="margin-left:25%;padding:1px 16px;height:1000px;">
+
+<br>
+<h1>WELCOME   </h1>
+
+<p>This will be my new proyect.</p>
+
+
+<br>
+<br>
 
 <script>
-// Set the date we're counting down to
-var countDownDate = new Date("Sep 28, 2021 15:37:25").getTime();
-
-// Update the count down every 1 second
-var countdownfunction = setInterval(function() {
-
-  // Get todays date and time
-  var now = new Date().getTime();
-  
-  // Find the distance between now an the count down date
-  var distance = countDownDate - now;
-  
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  
-  // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-  
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(countdownfunction);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
 </script>
 
-</body>
-</html>
+<br>
+
+
+<br>
+<br>
+
+
+
+<video width=560 border-radius=40 height=315 controls poster="vistaprevia.jpg">
+  <source src="16.mp4" type="video/mp4">
+  <br>
+
+</video>
+<br>
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/j2tsqY5ZvEM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
