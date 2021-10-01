@@ -2,6 +2,7 @@ html{
   background-color: #DDDFEE;
   text-align: center;
   height: 1000px
+  font-size: 25;
 
 }
 
@@ -10,8 +11,6 @@ html{
     float: center;
     margin-top: 50px;
     width:auto;h1 {
-	padding: 80px;
-	height: 120px;
 
 
 }
@@ -21,8 +20,8 @@ html{
 
 
 
-    border-right: 1px solid #9B9A9A;
-    float: left;
+    border-right: 100 solid #9B9A9A;
+    float: center;
     list-style: none outside none;
     padding-left: 5px;
     padding-right: 5px;
@@ -48,4 +47,11 @@ html{
 .menu .current a:hover {
     color: #0302;
     text-decoration: none;
+}
+
+button {
+
+	font-size: 40px;
+
+
 }
