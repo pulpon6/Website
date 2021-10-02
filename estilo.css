@@ -37,7 +37,7 @@ text-align: center;
 
 
 
-    border-right: 1px solid #9B9A9A;
+
     float: left;
     list-style: none outside none;
     padding-left: 5px;
@@ -116,7 +116,7 @@ color:black;
     width: 200px;
 }
 .menu1 li {
-    border-right: 1px solid #9a9b4A;
+   
     float: right;
     list-style: none outside none;
     padding-right:  5px;
