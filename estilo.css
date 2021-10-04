@@ -1,7 +1,7 @@
 html{
   background-color: #DDDFEE;
   text-align: center;
-  height: 1000px
+scroll-behavior: smooth;
 width:100%;
 font-size: 20px;
 
@@ -68,22 +68,10 @@ text-align: center;
 
 
 h1 {
-padding: 150px;
+padding: 110px;
   text-align: center;
 
 height: 120px;
-}
-
-
-footer{
-   position:fixed;
-  bottom:0;
-  left:0;
-  opacity: 1;
-  width:100%;
-  height: 110px;
-  background-color: #98999D;
-
 }
 
 
