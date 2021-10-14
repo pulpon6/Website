@@ -1,9 +1,20 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ricardo Nieto Chavez | Satélite    </title>
+ <meta name="description" content="Ricardo Nieto Chavez">
+
+
+
+  <meta property="og:type" content="WebPage">
+  <meta property="og:locale" content="en_Mx">
+  <meta property="og:site_name" content="Website| Informatica y Blog">
+  <meta property="og:title" content=" Ricardo Nieto Chavez    ">
+  <meta property="og:url" content="https://rnch6.tech">
+
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
     integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
     crossorigin=""/>
@@ -13,12 +24,19 @@
   
 </head>
 <style>
+html{
+
+    background-color: black
+}
+
+
+
     #issMap {
         height: 480px;
     }
 </style>
 <body>
-    <h1>Where is the ISS ?</h1>
+    <h1>Donde esta la estación espacial internacional </h1>
     <p>latitude: <span id="lat"></span><br></p>
     <p>longitude: <span id="lon"></span><br></p>
     
@@ -27,7 +45,7 @@
     
     <script>
 
-        // Making a map and tiles 
+        
         const mymap = L.map('issMap').setView([51.505, -0.09], 1);
         const attribution = 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>'
 
@@ -36,7 +54,6 @@
         tiles.addTo(mymap)
 
 
-        // Making a marker with a custom icon
         const issIcon = L.icon({
              iconUrl: 's.png',
              iconSize: [50, 32],
@@ -54,7 +71,6 @@
             console.log(data);
             const {latitude, longitude} = data;
             
-            // const marker = L.marker([0, 0]).addTo(mymap);
             marker.setLatLng([latitude, longitude]);
             if(firstTime) {
                 mymap.setView([latitude, longitude], 2);
