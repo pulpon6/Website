@@ -1,11 +1,15 @@
-<!DOCTYPE html>
-
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ricardo Nieto Chavez | Satélite    </title>
- <meta name="description" content="Ricardo Nieto Chavez">
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="icon"href="favicon.ico" type="image/ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=0.9">
+
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- begin _includes/seo.html --><title>Ricardo Nieto Chavez | Informatica y Blog</title>
+  <meta name="description" content="Ricardo Nieto Chavez">
 
 
 
@@ -15,80 +19,93 @@
   <meta property="og:title" content=" Ricardo Nieto Chavez    ">
   <meta property="og:url" content="https://rnch6.tech">
 
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-    crossorigin=""/>
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-    crossorigin=""></script>
-  
-</head>
-<style>
-html{
 
-    background-color: black
-}
+<header>
+<nav>
+<ul class="menu">
+<li><a href="https://rnch6.tech/">Home </a></li>
+<li><a href="https://rnchnews.blogspot.com/">News</a></li>
+<li><a href="/sat">ISS</a></li>
+<li >  <a href="/links/">Links</a></li>
+<li><button #dark onclick="myFunction()">Dark mode</button></li>
 
 
+<li><form action="https://www.paypal.com/donate" method="post" target="_top">
+<input type="hidden" name="hosted_button_id" value="TFJEZZHQABJPU" />
+<input type="image" src="https://www.paypalobjects.com/es_XC/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+<img alt="" border="0" src="https://www.paypal.com/es_MX/i/scr/pixel.gif" width="1" height="1" />
+</form></li>
 
-    #issMap {
-        height: 480px;
-    }
-</style>
+
+
+
+</ul>
+</nav>
+
+
+</header>
+
+
 <body>
-    <h1>Donde esta la estación espacial internacional </h1>
-    <p>latitude: <span id="lat"></span><br></p>
-    <p>longitude: <span id="lon"></span><br></p>
-    
-
-    <div id="issMap"></div>
-    
-    <script>
-
-        
-        const mymap = L.map('issMap').setView([51.505, -0.09], 1);
-        const attribution = 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>'
-
-        const tileUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
-        const tiles = L.tileLayer(tileUrl, { attribution });
-        tiles.addTo(mymap)
 
 
-        const issIcon = L.icon({
-             iconUrl: 's.png',
-             iconSize: [50, 32],
-             iconAnchor: [25, 16]
-});
-        const marker = L.marker([0, 0],{icon: issIcon}).addTo(mymap);
 
-        
+<h1 >
+WELCOME
 
-         const API_URL = 'https://api.wheretheiss.at/v1/satellites/25544'
-       let firstTime = true
-        async function getISS(){
-            const response = await fetch(API_URL);
-            const data = await response.json();
-            console.log(data);
-            const {latitude, longitude} = data;
-            
-            marker.setLatLng([latitude, longitude]);
-            if(firstTime) {
-                mymap.setView([latitude, longitude], 2);
-                firstTime = false;
-            }
-           
+</h1>
 
-            document.getElementById('lat').textContent = latitude.toFixed(2);
-            document.getElementById('lon').textContent = longitude.toFixed(2);
-          
-        }
-        
-        getISS()
 
-        setInterval(getISS, 1000)
-        
-    </script>
-    
-    
-</body>
+
+
+    <script src="script.js"></script>
+
+
+<div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-8 col-sm-12 mx-auto">
+
+                <div class="content">
+                    <h4>Random Password Generator</h4>
+                    <br />
+                    <input type="text" id="display">
+                    <br />
+                    <input type="range" min="0" max="25" name="slider" id="slider">
+                    <br />
+                    <button onclick="generate()">Generate</button>
+                    <button onclick="copyPassword()">Copy to Clipboard</button>
+                    <button onClick="window.location.reload();">Clean</button>
+
+                    <div id="length"></div>
+                </div>
+
+                <div class="previous_passwords">
+                    <b>Previously Generated Passwords</b>
+                    <br />
+                    <div id="lastNums"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+<br>
+<br>
+
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
 </html>
