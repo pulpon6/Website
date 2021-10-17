@@ -78,17 +78,16 @@ button {
     margin-top: 150px;
     margin-right: 19px;
 
+}
 
 
 
-  }
 a{
-      text-decoration: none;
+text-decoration: none;
 size-font:20px;
-  padding: 2em;     
-   margin: -2em;
+padding: 2em;     
+ margin: -2em;
 color: 000;
 z-index: 1; 
-
 font-weight: bold;
 }
