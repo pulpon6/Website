@@ -1,18 +1,12 @@
 html{
-  background-color: #DDDFEE;
-  text-align: center;
+ background-color: #DDDFEE;
+ text-align: center;
 scroll-behavior: smooth;
-width:100%;
+
 font-size: 20px;
 
 }
 
-@media (orientation: landscape) {
-  <!-- Aquí van todos los estilos CSS -->
-}
-@media (min-width:100%){
-  <!—- Aquí van todos los estilos CSS -->
-}
 
 
 h2{
@@ -24,7 +18,7 @@ text-align: center;
 .menu {
     float: left;
     margin-top: 10px;
-    width: 500px;h1 {
+    width: auto;h1 {
 	padding: 80px;
 	height: 120px;
 
@@ -68,19 +62,14 @@ text-align: center;
 
 
 h1 {
-padding: 110px;
-  text-align: center;
+    padding-top: 110px;
+    padding-bottom: 40px;
+    text-align: center;
 
-height: 120px;
+
 }
 
 
- .dark-mode  {
-  background-color: #202020;
-
-  color: #fff;
-  border-radius: 10px;
-}
 
 button {
   text-align: top;
@@ -98,40 +87,6 @@ color:black;
 }
 
 
-.menu1 {
-    float: right;
-    margin-top: 10px;
-    width: 200px;
-}
-.menu1 li {
-   
-    float: right;
-    list-style: none outside none;
-    padding-right:  5px;
-    padding-left:  5px;
-    width: auto;
-    font-size: 24px;
-}
-
-.menu1 li:last-child {
-    border-left: :none;
-}
-.menu1 li a {
-    color: #000000;
-    text-decoration: none;
-}
-.menu1 li a:hover {
-    color: #9B9A9A;
-    text-decoration: none;
-}
-.menu .current a {
-    color: #9B9A9A;
-    text-decoration: none;
-}
-.menu1 .current a:hover {
-    color: #000000;
-}
-
 
 
 .content{
@@ -139,26 +94,27 @@ color:black;
     margin-bottom: 20px;
     border-radius: 40px;
 
-    padding: 0px;
-    width: 100%;
+  margin: auto;
+
 }
 
 #display{
-    width: 50%;
+    width: 90%;
 }
 
 #slider{
-    width: 50%;
-    height: 10px;
+   	width: 90%;
+    height: 12px;
 }
 
 #length{
     display: inline-block;
-    width: 100px;
+    width: 100%;
 }
 
 .previous_passwords{
     margin-bottom: 10px;
+    padding-top: 12px;
 }
 
 
@@ -172,3 +128,14 @@ color:black;
 
 
 
+
+
+
+
+
+
+
+.bit {
+    color: black;
+    padding-bottom: 0px;
+}
