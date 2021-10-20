@@ -1,105 +1,137 @@
 <html>
 <head>
-<meta charset="utf-8">
-<link rel="stylesheet" href="estilo.css">
-<link rel="icon"href="favicon.ico" type="image/ico" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="icon"href="favicon.ico" type="image/ico" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5297246377403182"
+     crossorigin="anonymous"></script>
+  <!-- begin _includes/seo.html --><title>Ricardo Nieto Chavez | Informatica y Blog</title>
+  <meta name="description" content="Ricardo Nieto Chavez">
 
-  <!-- begin _includes/seo.html -->
-<title>Ricardo Nieto Chavez | Informatica y Blog</title>
-<meta name="description" content="Ricardo Nieto Chavez">
-<meta property="og:type" content="WebPage">
-<meta property="og:locale" content="en_Mx">
-<meta property="og:site_name" content="Website| Informatica y Blog">
-<meta property="og:title" content=" Ricardo Nieto Chavez    ">
-<meta property="og:url" content="https://rnch6.tech">
+
+  <meta name="viewport" content="width=device-width, initial-scale=0.7">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="website | Informatica y Blog">
+  <meta property="og:title" content="            Ricardo Nieto Chavez         ">
+  <meta property="og:url" content="https://rnch6.tech">
+
+
+
+
+<style>
+
+
+body {
+  background-color: white;
+  color: black;
+  font-size: 25px;
+  margin: 0
+
+}
+
+.dark-mode {
+  background-color: #333333;
+  color: white;
+}
+
+
+
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  background-color: #green;
+}
+
+input[type=checkbox] {
+  margin-top: 16px;
+}
+
+input[type=submit] {
+  background-color: #green;
+  color: green;
+}
+
+
+</style>
 </head>
 
-<header>
-<nav>
-<ul class="menu">
-<li><a href="https://rnch6.tech/">Home </a></li>
-<li><a href="https://rnchnews.tech/">News</a></li>
-<li><a href="/sat">ISS</a></li>
-<li >  <a href="/links/">Links</a></li>
-<li >  <a href="/Libros/">Libros </a></li>
 
 
-</ul>
-</nav>
-</header>
 <body>
-<h1 >WELCOME</h1>
 
-<div class="one"></div>
-<h2 class="bit">Bitcoin</h2> 
-<h2 id=ask></h2> 
+<ul>
+  <li><a class="active" href="https://rnch6.tech/">Home</a></li>
  
+  <li><a href="https://ricardonietochavez.github.io/1/">Click here :)</a></li>
+  <li><a href="https://www.instagram.com/pconocimientos/" class="fa fa-instagram"></a>
+</li>
+  <li><a href="https://twitter.com/ricardonietoch6" class="fa fa-twitter"></a></li>
+  <li><br><button onclick="myFunction()">-   Dark mode   -</button></li>
+  
+</ul>
 
+<div style="margin-left:25%;padding:1px 16px;height:1000px;">
+
+<br>
+<h1>WELCOME   </h1>
+
+<p>This will be my new proyect.</p>
+
+
+<br>
+<br>
 
 <script>
-var ws = new WebSocket("wss://api.bitfinex.com/ws");
-ws.onopen = function() {
-    ws.send(JSON.stringify({
-        "event": "subscribe",
-        "channel": "ticker",
-        "pair": "BTCUSD"
-    }));
-};
-
-ws.onmessage = function(msg) {
-    var response = JSON.parse(msg.data);
-    console.log(response);
-
-    var hb = response[1];
-    if (hb != "hb") {
-        document.getElementById("ask").textContent = " $  " + response[3];
-        
-    }
-};
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
 </script>
 
+<br>
 
 
-    <script src="script.js"></script>
-
-
-<div class="container">
-
-        <div class="row">
-
-            <div class="col-lg-8 col-sm-12 mx-auto">
-
-                <div class="content">
-                    <h4>Random Password Generator</h4>
-                    <br />
-                    <input type="text" id="display">
-                    <br />
-                    <input type="range" min="0" max="25" name="slider" id="slider">
-                    <br />
-                    <button onclick="generate()">Generate</button>
-                    <button onclick="copyPassword()">Copy to Clipboard</button>
-                    <button onClick="window.location.reload();">Clean</button>
-
-                    <div id="length"></div>
-                </div>
-
-                <div class="previous_passwords">
-                    <b>Previously Generated Passwords</b>
-                    <br />
-                    <div id="lastNums"></div>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
+<br>
+<br>
 
 
 
+<video width=560  height=315 controls poster="vistaprevia.jpg">
+  <source src="16.mp4" type="video/mp4">
+  <br>
+
+</video>
+<br>
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/j2tsqY5ZvEM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<form action="/action_page.php">
+  <div class="container">
+    <h2>Subscribe to our Newsletter</h2>
+
+  </div>
+
+  <div class="container">
+    <input type="text" placeholder="Name" name="name" required>
+    <input type="text" placeholder="Email address" name="mail" required>
+    <label>
+      <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+    </label>
+  </div>
+
+  <div class="container">
+    <input type="submit" value="Subscribe">
+  </div>
+</form>
 
 
 
+</body>
 </html>
