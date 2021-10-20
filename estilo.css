@@ -1,0 +1,123 @@
+html{
+ background-color: #DDDFEE;
+ text-align: center;
+scroll-behavior: smooth;
+
+font-size: 20px;
+
+}
+
+
+
+h2{
+font-size: 25px;
+padding: 25px;
+text-align: center;
+
+}
+.menu {
+    float: left;
+    margin-top: 10px;
+    width: 500px;h1 {
+	padding: 80px;
+	height: 120px;
+
+
+
+}
+
+}
+.menu li {
+
+
+
+
+    float: left;
+    list-style: none outside none;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: auto;
+|
+}
+
+.menu li:last-child {
+    border-right:none;
+}
+.menu li a {
+    color: #000000;
+    text-decoration: none;
+}
+.menu li a:hover {
+    color: #9B9A9A;
+    text-decoration: none;
+}
+.menu .current a {
+    color: #9B9A9A;
+    text-decoration: none;
+}
+.menu .current a:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+
+h1 {
+    padding-top: 110px;
+    padding-bottom: 40px;
+    text-align: center;
+
+
+}
+
+
+button {
+  text-align: top;
+  font-size: 20px   
+
+  margin-right:2px;
+  background:#707FFF;
+	border-radius:20px;
+	color:black ;
+}
+
+button .container {
+color:black;
+}
+
+
+
+.content{
+    margin-top: 19px;
+    margin-bottom: 20px;
+    border-radius: 40px;
+
+  margin: auto;
+
+}
+
+#display{
+    width: 90%;
+}
+
+#slider{
+   	width: 90%;
+    height: 12px;
+}
+
+#length{
+    display: inline-block;
+    width: 100%;
+}
+
+.previous_passwords{
+    margin-bottom: 10px;
+    padding-top: 12px;
+}
+
+
+
+
+.bit {
+    color: black;
+    padding-bottom: 0px;
+}
