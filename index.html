@@ -4,16 +4,8 @@
 <link rel="stylesheet" href="estilo.css">
 <link rel="icon"href="favicon.ico" type="image/ico" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NCLZ3E3L3D"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-NCLZ3E3L3D');
-</script>
   <!-- begin _includes/seo.html -->
 <title>Ricardo Nieto Chavez | Informatica y Blog</title>
 <meta name="description" content="Ricardo Nieto Chavez">
@@ -23,17 +15,61 @@
 <meta property="og:title" content=" Ricardo Nieto Chavez    ">
 <meta property="og:url" content="https://rnch6.tech">
 </head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-207055348-1">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-207055348-1');
-</script>
 <header>
+  <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+  {
+  "symbols": [
+    {
+      "proName": "FOREXCOM:SPXUSD",
+      "title": "S&P 500"
+    },
+    {
+      "proName": "FOREXCOM:NSXUSD",
+      "title": "Nasdaq 100"
+    },
+    {
+      "proName": "FX_IDC:EURUSD",
+      "title": "EUR/USD"
+    },
+    {
+      "proName": "BITSTAMP:BTCUSD",
+      "title": "BTC/USD"
+    },
+    {
+      "proName": "BITSTAMP:ETHUSD",
+      "title": "ETH/USD"
+    },
+    {
+      "description": "USD/MX",
+      "proName": "FX:USDMXN"
+    },
+    {
+      "description": "SHIBA/USD",
+      "proName": "FTX:SHIBUSD"
+    },
+    {
+      "description": "Apple",
+      "proName": "NASDAQ:AAPL"
+    },
+    {
+      "description": "Amazon",
+      "proName": "NASDAQ:AMZN"
+    }
+  ],
+  "showSymbolLogo": true,
+  "colorTheme": "light",
+  "isTransparent": true,
+  "displayMode": "adaptive",
+  "locale": "en"
+}
+  </script>
+</div>
+
 <nav>
 <ul class="menu">
 <li><a href="https://rnch6.tech/">Home </a></li>
@@ -41,44 +77,17 @@
 <li><a href="/sat">ISS</a></li>
 <li >  <a href="/links/">Links</a></li>
 <li >  <a href="/Libros/">Libros </a></li>
-<li><form action="https://www.paypal.com/donate" method="post" target="_top">
-<input type="hidden" name="hosted_button_id" value="TFJEZZHQABJPU" />
-<input type="image" src="https://www.paypalobjects.com/es_XC/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-<img alt="" border="0" src="https://www.paypal.com/es_MX/i/scr/pixel.gif" width="1" height="1" />
-</form></li>
+
+
 </ul>
 </nav>
+
 </header>
 <body>
 <h1 >WELCOME</h1>
 
-<div class="one"></div>
-<h2 class="bit">Bitcoin</h2> 
-<h2 id=ask></h2> 
  
 
-
-<script>
-var ws = new WebSocket("wss://api.bitfinex.com/ws");
-ws.onopen = function() {
-    ws.send(JSON.stringify({
-        "event": "subscribe",
-        "channel": "ticker",
-        "pair": "BTCUSD"
-    }));
-};
-
-ws.onmessage = function(msg) {
-    var response = JSON.parse(msg.data);
-    console.log(response);
-
-    var hb = response[1];
-    if (hb != "hb") {
-        document.getElementById("ask").textContent = " $  " + response[3];
-        
-    }
-};
-</script>
 
 
 
