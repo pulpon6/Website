@@ -18,9 +18,9 @@ text-align: center;
 .menu {
     float: left;
     margin-top: 10px;
-    width: auto;h1 {
-    padding: 80px;
-    height: 120px;
+    width: 500px;h1 {
+	padding: 80px;
+	height: 120px;
 
 
 
@@ -37,7 +37,7 @@ text-align: center;
     padding-left: 5px;
     padding-right: 5px;
     width: auto;
-
+|
 }
 
 .menu li:last-child {
@@ -70,22 +70,19 @@ h1 {
 }
 
 
-
 button {
   text-align: top;
   font-size: 20px   
-  float:right;
+
   margin-right:2px;
   background:#707FFF;
-    border-radius:20px;
-    color:black ;
+	border-radius:20px;
+	color:black ;
 }
-
 
 button .container {
 color:black;
 }
-
 
 
 
@@ -103,7 +100,7 @@ color:black;
 }
 
 #slider{
-    width: 90%;
+   	width: 90%;
     height: 12px;
 }
 
@@ -114,29 +111,17 @@ color:black;
 
 .previous_passwords{
     margin-bottom: 10px;
+    padding-top: 12px;
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.one {
-
-}
 
 .bit {
     color: black;
     padding-bottom: 0px;
 }
+
+li{
+	padding-top: 9px;
+	  list-style-type: none;}
