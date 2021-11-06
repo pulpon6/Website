@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IMG Compress</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./lib/jszip.js"></script>
+    <script src="./lib/jszip-utils.js"></script>
+    <script src="./lib/fileSaver.js"></script>
+</head>
+
+<body>
+    <div hide="true" id="images"></div>
+    <div class="conf">
+        <label for="percentage">
+            Porcentaje en dimensiones de imagen a reducir
+            <input value="50" id="percentage" min="1" max="100" type="number" />
+        </label>
+        <label for="zipName">
+            Nombre del archivo comprimido con imágenes
+            <input value="compressed" id="zipName" type="text" />
+        </label>
+        <label for="quality">
+            Porcentaje en calidad a reducir
+            <input value="70" id="quality" min="1" max="100" type="number" />
+        </label>
+    </div>
+    <a hide="true" id="download" hide=" hide " onClick=" prepareDownload " download>
+        Descargar imágenes comprimidas
+    </a>
+    <label for="upload">
+        Subir <span></span> imágenes
+        <input id="upload" type="file" multiple accept=".jpg,.jpeg,.jp2,.png,.svg,.webp,.vga">
+    </label>
+    
+    <i class="author">
+        Creado por 
+        <a target="_blank" href="https://codepen.io/LuisArmando-TC/">LA-TestCoder</a>
+    </i>
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
