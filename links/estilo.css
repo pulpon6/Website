@@ -11,7 +11,7 @@ form {
 
 }
 
-.menu {
+.menu1 {
     float: center;
     margin-top: 100px;
     width:auto;h1 {
@@ -20,7 +20,7 @@ form {
 }
 
 }
-.menu li {
+.menu1 li {
 
 
 
@@ -31,6 +31,52 @@ form {
     padding-right: 5px; 
     width: auto;
 
+}
+
+.menu1 li:last-child {
+    border-right:none;
+}
+.menu1 li a {
+    color: #000000;
+    text-decoration: none;
+}
+.menu1 li a:hover {
+    color: #9B9A9A;
+    text-decoration: none;
+}
+.menu1 .current a {
+    color: #9B9A9A;
+    text-decoration: none;
+}
+.menu1 .current a:hover {
+    color: #0302;
+    text-decoration: none;
+}
+
+
+.menu {
+    float: left;
+    margin-top: 10px;
+    width: 500px;h1 {ß
+    padding: 80px;
+    height: 120px;
+
+
+
+}
+
+}
+.menu li {
+
+
+
+
+    float: left;
+    list-style: none outside none;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: auto;
+|
 }
 
 .menu li:last-child {
@@ -49,7 +95,7 @@ form {
     text-decoration: none;
 }
 .menu .current a:hover {
-    color: #0302;
+    color: #000000;
     text-decoration: none;
 }
 
