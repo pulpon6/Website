@@ -2,6 +2,7 @@
 
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="estilo.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ricardo Nieto Chavez | Satélite    </title>
@@ -59,7 +60,7 @@ html{
 
 
         const issIcon = L.icon({
-             iconUrl: 's.png',
+             iconUrl: 'sat.png',
              iconSize: [50, 32],
              iconAnchor: [25, 16]
 });
@@ -92,6 +93,14 @@ html{
         setInterval(getISS, 1000)
         
     </script>
+    <br>
+       <content class="map-content">
+      <div id="mapCanvas" class="map"></div>
+    </content>
+
+    <aside class="map-aside">
+    <iframe src="http://www.ustream.tv/embed/9408562?html5ui=1" allowfullscreen="true" webkitallowfullscreen="true" scrolling="no" frameborder="0" id="liveStream"></iframe>
+    </aside>
     
     
 </body>
